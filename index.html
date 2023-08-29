@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUMG</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+      }
+    .fruild-container
+    {
+        
+        height: 150px !important;
+    }
+    .container{
+        
+        height: 100%;
+    }
+    .fruild-container img{
+        
+        
+
+        
+    }
+    .bl_header{
+       
+        
+        
+    }
+    ._edit_logo{
+        
+        height:140px;    
+
+    }
+    .title_information{
+
+        display: flex;
+        align-items: center;
+
+        margin-left: 10px;
+        margin-top: 10px  ;
+        
+        
+    }
+    .title_info{
+        padding-left: 0px;
+        margin-left: -18px;
+    }
+    .title_info h1,h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 26px;
+        height:30px;
+        color: #0c4da2  ;
+        
+        
+    }
+    .title_info h2{
+        
+        font-size: 20px;
+        
+
+    }
+    
+    .title_info h1{
+        font-weight: bold;
+        margin-top: 40px;
+        
+
+    }
+    .col-2{
+      
+        height: 150px;
+    }
+    .col-3{
+       
+        height: 150px;
+    }
+    
+    .login_tieude{
+       
+        height: 50%;
+        margin-top: 5px;
+
+    }
+    .edit_input{
+        width :100%;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid rgb(152, 150, 150) !important;
+        padding: 0 10px 0 10px;
+        margin-left: -10px;
+        
+    }
+    .login_text{
+        font-size: 12px;
+        height:30%;
+        font-weight: bold;
+        margin-top: 10px;
+        padding: 0 10px 0 10px;
+        
+        
+    }
+    .edit_icon{
+        height: 30%;
+        margin-top: 5px;
+
+        
+       
+    }
+    .col-7{
+       
+        height: 80%;
+    }
+    .img_flag{
+        margin-top: 5px;
+    }
+    .edit_icon_search{
+        position: absolute;
+        top: 17px;
+        right: 20px;
+    }
+    .block_search{
+        
+        position: relative;
+        padding: 0 0px 0 0px;
+
+    }
+    .tieu_ngu{
+        font-size: 15px;
+        font-weight: bold;
+        color: #0c4da2;
+    }
+    .login_tieude_bottom{
+        margin-left: -75px;
+    }
+    .menu{
+        background: #0c4ca3;
+    }
+    .container_menu
+    {
+        
+        
+    }
+    /*
+     .row-menu{
+        height: 50px;
+    }
+    .h_50{
+        height: 50px !important;
+    }
+    .row-menu li{
+        list-style: none;
+        
+    }
+    .row-menu ul{
+        box-sizing: border-box;
+    }
+    .row-menu li{
+        font-size: 14px;
+        color: #ffffff;
+    }
+    .row-menu li{
+        border-right:1px solid #ffffff;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .row-menu a{
+        height: 100%;
+    }
+    .row-menu a i{
+        font-size: 25px;
+        margin-top: 12px;
+        
+        text-align: center;
+        margin-left: 20px;
+    } 
+    */  
+    
+
+
+    span {
+        display: flex;
+        font-size: 14px;
+        justify-content: center;
+        line-height: 50px;
+       
+        
+      }
+      ul {
+        display: flex;
+        flex-flow: row wrap;
+        list-style-type: none;
+        
+      }
+      
+      li {
+        width: 100px;
+        height: 50px;
+        border-right: 1px solid #ffffff;
+        
+      }
+      .container_menu li i{
+        color: #ffffff;
+        font-size: 25px;
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-left: 25px;
+       
+      }
+      .container_menu span
+      {
+        color: #ffffff;
+      }
+      .li_daotao
+      {
+        width: 150px;
+      }
+      .li_Khoahoc
+      {
+        width: 180px;
+      }
+      .li_tintuc
+      {
+        width: 80px;
+      }
+      .li_hoptac
+      {
+        width: 155px;
+      }
+      .li_hd
+      {
+        width: 140px;
+      }
+      .li_sv
+      {
+        width: 90px;
+      }
+      .slicer
+      {
+        
+        height: 400 px;
+      }
+      .bl_img{
+        height: 50%;
+      }
+      .bg_hd{
+        
+        
+        background-image: url(./modern-flowing-blue-wave-banner-background/19862.jpg);
+        background-size: 100% 130px;
+        
+        
+      }
+      .bl_selec{
+        height: 90px;
+        margin-top: 10px;
+        border: 1px solid red;
+      }
+      .bl_selec div{
+        border: 1px solid blue;
+        height: 90px;
+      }
+      .bl_selec span
+      {
+        color: #0c4da2;
+        font-size: 14px;
+      }
+      .bl_selec{
+        display: flex;
+        justify-content: space-between;
+        
+      }
+      .edit_bl_seclector
+      {
+        display: flex;
+        justify-content: space-between;
+      }
+     
+
+      
+      
+      
+      
+      
+      
+      
+    
+    
+</style>
+</head>
+<body>
+
+    <div  class="fruild-container bg_hd">
+        
+        <div class="container">
+            <div class="row bl_header">
+                <div class="col-2 bl_logo">
+                    <img src="./zyro-image.png" class="_edit_logo" alt="logo">
+
+                </div>
+                
+                <div class="col-6 title_info">
+                    <h1>TRƯỜNG ĐẠI HỌC MỎ - ĐỊA CHẤT</h1>
+                    <h2>HANOI UNIVERSITY OF MINING AND GEOLOGY</h2>
+                </div>
+
+                <div class="col-4">
+                    <div class="row login_tieude">
+                        <div class="col-1 edit_icon">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <h2 class="login_text col-3">Đăng nhập</h2>
+                        <div class="col-7 block_search">   
+                            <input  class="edit_input " type="text">
+                            <i class="fa-solid fa-magnifying-glass fa-2xs edit_icon_search"></i>
+                        </div>
+                        <div class="col-1 bl_img">
+                            <img class="img_flag" src="./vi-VN.png" alt="">
+                        </div>
+                       
+                        
+                    </div>
+                    <div class="row login_tieude_bottom">
+                        <h2 class="tieu_ngu">Đoàn kết - Liêm chính - Trách nhiệm - Sáng tạo - Chất lượng</h2>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+            
+            
+        </div>
+        <div class="menu">
+            <div class="container container_menu">
+                <ul>
+                    <li><i class="fa-solid fa-house" style="color: #ffffff;"></i></li>
+                    <li>
+                        <a href="">
+                            <span>GIỚI THIỆU</span>
+                        
+                     </a>
+                    </li>
+                    <li>
+                        <a href="https://tuyensinh.humg.edu.vn/Pages/home.aspx">
+                            <span>TUYỂN SINH</span>
+                        </a>
+                    </li>
+                    <li class="li_tintuc">
+                        <a href="">
+                            <span>TIN TỨC</span>
+                        </a>
+
+                    </li>
+                    <li  class="li_daotao">
+                        <a href="" >
+                            <span>ĐÀO TẠO-ĐBCLGD</span>
+                        </a>
+                    </li>
+                    <li class="li_Khoahoc">
+                        <a href="">
+                            <span>KHOA HỌC-CÔNG NGHỆ</span>
+                        </a>
+                    </li>
+                    <li class="li_hoptac">
+                        <a href="">
+                            <span>HỢP TÁC-ĐỐI NGOẠI</span>
+                        </a>
+                    </li>
+                    <li class="li_sv">
+                        <a href="">
+                            <span>SINH VIÊN</span>
+                        </a>
+                    </li>
+                    <li class="li_hd">
+                        <a href="">
+                            <span>HĐ GIÁO SƯ CƠ SỞ</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="slicer">
+            <div class="container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                      
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./banner ts 2023.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./07 ccdtdat kiem dinh chat luong gdqg (1).jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./4saohumg.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./banner web xet tuyen hoc ba.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./top 10 webometric.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </button>
+                  </div>
+
+            </div>
+            
+        </div>
+
+        <div class="container edit_bl_seclector">
+            <div class="bl_seclector" style="width:180px;height:80px;">
+                <h1>hello</h1>
+
+            </div>
+            <div class="bl_seclector" style="width:180px;height:80px;">
+                <h1>hello</h1>
+
+            </div>
+            <div class="bl_seclector" style="width:180px;height:80px;">
+                <h1>hello</h1>
+
+            </div>
+            <div class="bl_seclector" style="width:180px;height:80px;">
+                <h1>hello</h1>
+
+            </div>
+            <div class="bl_seclector" style="width:180px;height:80px;">
+                <h1>hello</h1>
+
+            </div>
+            <div class="bl_seclector" style="width:180px;height:80px;">
+                <h1>hello</h1>
+
+            </div>
+            
+        </div>
+
+
+        
+       
+    </div>
+    
+</body>
+</html>
